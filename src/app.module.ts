@@ -9,7 +9,14 @@ import { ServicosModule } from './servicos/servicos.module';
 import { CaslModule } from './casl/casl.module';
 
 @Module({
-  imports: [UsersModule, PrismaModule, AuthModule, VendasModule, ServicosModule, CaslModule],
+  imports: [
+    UsersModule,
+    PrismaModule,
+    AuthModule,
+    VendasModule,
+    ServicosModule,
+    CaslModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
