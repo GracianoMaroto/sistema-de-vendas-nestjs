@@ -5,7 +5,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({
-    origin: 'https://sistema-aa.netlify.app', // seu frontend
+    origin: ['http://localhost:9001', 'https://sistema-aa.netlify.app'], // seu frontend
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // se você precisar enviar cookies
   });
